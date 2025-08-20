@@ -1,0 +1,528 @@
+{
+  "destinations": [
+    {
+      "destinationName": "Cervinia",
+      "hotelsOptions": [
+        {
+          "id": "cervinia_hermitage",
+          "name": "Hotel Hermitage",
+          "rating": 4.6,
+          "stars": 4,
+          "description": "Luxury hotel with stunning mountain views and spa facilities",
+          "isFromLiteApi": false,
+          "rooms": [
+            {
+              "id": "cervinia_hermitage_standard",
+              "name": "Standard Room",
+              "size": "25m²",
+              "occupancy": "2 guests",
+              "price": 280,
+              "description": "Comfortable room with mountain views"
+            },
+            {
+              "id": "cervinia_hermitage_deluxe",
+              "name": "Deluxe Room",
+              "size": "35m²",
+              "occupancy": "2 guests",
+              "price": 380,
+              "description": "Spacious room with balcony and enhanced amenities"
+            },
+            {
+              "id": "cervinia_hermitage_suite",
+              "name": "Junior Suite",
+              "size": "45m²",
+              "occupancy": "3 guests",
+              "price": 520,
+              "description": "Luxury suite with separate living area"
+            },
+            {
+              "id": "cervinia_hermitage_family",
+              "name": "Family Room",
+              "size": "55m²",
+              "occupancy": "4 guests",
+              "price": 680,
+              "description": "Large family room with connecting bedrooms"
+            }
+          ]
+        },
+        {
+          "id": "cervinia_breuil",
+          "name": "Hotel Breuil",
+          "rating": 4.2,
+          "stars": 3,
+          "description": "Cozy family-run hotel with traditional Alpine charm",
+          "isFromLiteApi": false,
+          "rooms": [
+            {
+              "id": "cervinia_breuil_standard",
+              "name": "Standard Room",
+              "size": "22m²",
+              "occupancy": "2 guests",
+              "price": 195,
+              "description": "Cozy room with traditional Alpine decor"
+            },
+            {
+              "id": "cervinia_breuil_superior",
+              "name": "Superior Room",
+              "size": "28m²",
+              "occupancy": "2 guests",
+              "price": 245,
+              "description": "Larger room with mountain views"
+            },
+            {
+              "id": "cervinia_breuil_triple",
+              "name": "Triple Room",
+              "size": "32m²",
+              "occupancy": "3 guests",
+              "price": 295,
+              "description": "Comfortable room for three guests"
+            },
+            {
+              "id": "cervinia_breuil_family",
+              "name": "Family Room",
+              "size": "40m²",
+              "occupancy": "4 guests",
+              "price": 395,
+              "description": "Spacious family accommodation"
+            }
+          ]
+        },
+        {
+          "id": "cervinia_cervinia",
+          "name": "Hotel Cervinia",
+          "rating": 4.8,
+          "stars": 5,
+          "description": "Premium 5-star hotel with gourmet restaurant and wellness center",
+          "isFromLiteApi": false,
+          "rooms": [
+            {
+              "id": "cervinia_cervinia_deluxe",
+              "name": "Deluxe Room",
+              "size": "40m²",
+              "occupancy": "2 guests",
+              "price": 320,
+              "description": "Luxury room with premium amenities"
+            },
+            {
+              "id": "cervinia_cervinia_suite",
+              "name": "Executive Suite",
+              "size": "60m²",
+              "occupancy": "3 guests",
+              "price": 480,
+              "description": "Elegant suite with separate living area"
+            },
+            {
+              "id": "cervinia_cervinia_presidential",
+              "name": "Presidential Suite",
+              "size": "80m²",
+              "occupancy": "4 guests",
+              "price": 720,
+              "description": "Ultimate luxury with panoramic views"
+            },
+            {
+              "id": "cervinia_cervinia_family",
+              "name": "Family Suite",
+              "size": "70m²",
+              "occupancy": "5 guests",
+              "price": 580,
+              "description": "Spacious family suite with multiple bedrooms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "destinationName": "Cortina Ampezzo",
+      "hotelsOptions": [
+        {
+          "id": "cortina_poste",
+          "name": "Hotel de la Poste",
+          "rating": 4.7,
+          "stars": 4,
+          "description": "Historic hotel in the heart of Cortina with elegant rooms",
+          "isFromLiteApi": false,
+          "rooms": [
+            {
+              "id": "cortina_poste_standard",
+              "name": "Standard Room",
+              "size": "30m²",
+              "occupancy": "2 guests",
+              "price": 350,
+              "description": "Elegant room with historic charm"
+            },
+            {
+              "id": "cortina_poste_deluxe",
+              "name": "Deluxe Room",
+              "size": "40m²",
+              "occupancy": "2 guests",
+              "price": 450,
+              "description": "Spacious room with city center views"
+            },
+            {
+              "id": "cortina_poste_suite",
+              "name": "Junior Suite",
+              "size": "55m²",
+              "occupancy": "3 guests",
+              "price": 580,
+              "description": "Luxury suite with separate living area"
+            },
+            {
+              "id": "cortina_poste_family",
+              "name": "Family Suite",
+              "size": "65m²",
+              "occupancy": "4 guests",
+              "price": 680,
+              "description": "Large family suite with multiple bedrooms"
+            }
+          ]
+        },
+        {
+          "id": "cortina_cristallo",
+          "name": "Hotel Cristallo",
+          "rating": 4.9,
+          "stars": 5,
+          "description": "Luxury resort with panoramic views and Michelin-starred dining",
+          "isFromLiteApi": false,
+          "rooms": [
+            {
+              "id": "cortina_cristallo_deluxe",
+              "name": "Deluxe Room",
+              "size": "45m²",
+              "occupancy": "2 guests",
+              "price": 420,
+              "description": "Luxury room with panoramic mountain views"
+            },
+            {
+              "id": "cortina_cristallo_suite",
+              "name": "Executive Suite",
+              "size": "70m²",
+              "occupancy": "3 guests",
+              "price": 650,
+              "description": "Elegant suite with premium amenities"
+            },
+            {
+              "id": "cortina_cristallo_presidential",
+              "name": "Presidential Suite",
+              "size": "100m²",
+              "occupancy": "4 guests",
+              "price": 950,
+              "description": "Ultimate luxury with private terrace"
+            },
+            {
+              "id": "cortina_cristallo_family",
+              "name": "Royal Family Suite",
+              "size": "85m²",
+              "occupancy": "5 guests",
+              "price": 780,
+              "description": "Spacious family suite with luxury amenities"
+            }
+          ]
+        },
+        {
+          "id": "cortina_bellevue",
+          "name": "Hotel Bellevue",
+          "rating": 4.1,
+          "stars": 3,
+          "description": "Budget-friendly option with great location near ski lifts",
+          "isFromLiteApi": false,
+          "rooms": [
+            {
+              "id": "cortina_bellevue_standard",
+              "name": "Standard Room",
+              "size": "25m²",
+              "occupancy": "2 guests",
+              "price": 180,
+              "description": "Comfortable room with ski lift access"
+            },
+            {
+              "id": "cortina_bellevue_superior",
+              "name": "Superior Room",
+              "size": "30m²",
+              "occupancy": "2 guests",
+              "price": 220,
+              "description": "Larger room with mountain views"
+            },
+            {
+              "id": "cortina_bellevue_triple",
+              "name": "Triple Room",
+              "size": "35m²",
+              "occupancy": "3 guests",
+              "price": 260,
+              "description": "Comfortable room for three guests"
+            },
+            {
+              "id": "cortina_bellevue_family",
+              "name": "Family Room",
+              "size": "45m²",
+              "occupancy": "4 guests",
+              "price": 320,
+              "description": "Spacious family accommodation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "destinationName": "Val Gardena",
+      "hotelsOptions": [
+        {
+          "id": "valgardena_gardena",
+          "name": "Hotel Gardena Grödnerhof",
+          "rating": 4.5,
+          "stars": 4,
+          "description": "Traditional Alpine hotel with modern amenities and spa",
+          "isFromLiteApi": false,
+          "rooms": [
+            {
+              "id": "valgardena_gardena_standard",
+              "name": "Standard Room",
+              "size": "28m²",
+              "occupancy": "2 guests",
+              "price": 290,
+              "description": "Comfortable room with Alpine decor"
+            },
+            {
+              "id": "valgardena_gardena_deluxe",
+              "name": "Deluxe Room",
+              "size": "38m²",
+              "occupancy": "2 guests",
+              "price": 380,
+              "description": "Spacious room with mountain views"
+            },
+            {
+              "id": "valgardena_gardena_suite",
+              "name": "Junior Suite",
+              "size": "50m²",
+              "occupancy": "3 guests",
+              "price": 480,
+              "description": "Luxury suite with separate living area"
+            },
+            {
+              "id": "valgardena_gardena_family",
+              "name": "Family Suite",
+              "size": "60m²",
+              "occupancy": "4 guests",
+              "price": 580,
+              "description": "Large family suite with multiple bedrooms"
+            }
+          ]
+        },
+        {
+          "id": "valgardena_alpenroyal",
+          "name": "Hotel Alpenroyal",
+          "rating": 4.8,
+          "stars": 5,
+          "description": "Luxury hotel with infinity pool and gourmet restaurant",
+          "isFromLiteApi": false,
+          "rooms": [
+            {
+              "id": "valgardena_alpenroyal_deluxe",
+              "name": "Deluxe Room",
+              "size": "45m²",
+              "occupancy": "2 guests",
+              "price": 380,
+              "description": "Luxury room with premium amenities"
+            },
+            {
+              "id": "valgardena_alpenroyal_suite",
+              "name": "Executive Suite",
+              "size": "65m²",
+              "occupancy": "3 guests",
+              "price": 580,
+              "description": "Elegant suite with separate living area"
+            },
+            {
+              "id": "valgardena_alpenroyal_presidential",
+              "name": "Presidential Suite",
+              "size": "90m²",
+              "occupancy": "4 guests",
+              "price": 850,
+              "description": "Ultimate luxury with panoramic views"
+            },
+            {
+              "id": "valgardena_alpenroyal_family",
+              "name": "Royal Family Suite",
+              "size": "75m²",
+              "occupancy": "5 guests",
+              "price": 720,
+              "description": "Spacious family suite with luxury amenities"
+            }
+          ]
+        },
+        {
+          "id": "valgardena_tyrol",
+          "name": "Hotel Tyrol",
+          "rating": 4.3,
+          "stars": 3,
+          "description": "Family-friendly hotel with excellent ski-in/ski-out access",
+          "isFromLiteApi": false,
+          "rooms": [
+            {
+              "id": "valgardena_tyrol_standard",
+              "name": "Standard Room",
+              "size": "26m²",
+              "occupancy": "2 guests",
+              "price": 220,
+              "description": "Comfortable room with ski-in/ski-out access"
+            },
+            {
+              "id": "valgardena_tyrol_superior",
+              "name": "Superior Room",
+              "size": "32m²",
+              "occupancy": "2 guests",
+              "price": 260,
+              "description": "Larger room with mountain views"
+            },
+            {
+              "id": "valgardena_tyrol_triple",
+              "name": "Triple Room",
+              "size": "38m²",
+              "occupancy": "3 guests",
+              "price": 300,
+              "description": "Comfortable room for three guests"
+            },
+            {
+              "id": "valgardena_tyrol_family",
+              "name": "Family Room",
+              "size": "48m²",
+              "occupancy": "4 guests",
+              "price": 380,
+              "description": "Spacious family accommodation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "destinationName": "Zermatt",
+      "hotelsOptions": [
+        {
+          "id": "zermatt_zermatterhof",
+          "name": "Hotel Zermatterhof",
+          "rating": 4.9,
+          "stars": 5,
+          "description": "Iconic luxury hotel with Matterhorn views and world-class service",
+          "isFromLiteApi": false,
+          "rooms": [
+            {
+              "id": "zermatt_zermatterhof_deluxe",
+              "name": "Deluxe Room",
+              "size": "50m²",
+              "occupancy": "2 guests",
+              "price": 450,
+              "description": "Luxury room with Matterhorn views"
+            },
+            {
+              "id": "zermatt_zermatterhof_suite",
+              "name": "Executive Suite",
+              "size": "75m²",
+              "occupancy": "3 guests",
+              "price": 720,
+              "description": "Elegant suite with premium amenities"
+            },
+            {
+              "id": "zermatt_zermatterhof_presidential",
+              "name": "Presidential Suite",
+              "size": "120m²",
+              "occupancy": "4 guests",
+              "price": 1200,
+              "description": "Ultimate luxury with private terrace and Matterhorn views"
+            },
+            {
+              "id": "zermatt_zermatterhof_family",
+              "name": "Royal Family Suite",
+              "size": "95m²",
+              "occupancy": "5 guests",
+              "price": 950,
+              "description": "Spacious family suite with luxury amenities"
+            }
+          ]
+        },
+        {
+          "id": "zermatt_monterosa",
+          "name": "Hotel Monte Rosa",
+          "rating": 4.6,
+          "stars": 4,
+          "description": "Historic hotel in the center of Zermatt with modern comforts",
+          "isFromLiteApi": false,
+          "rooms": [
+            {
+              "id": "zermatt_monterosa_standard",
+              "name": "Standard Room",
+              "size": "30m²",
+              "occupancy": "2 guests",
+              "price": 320,
+              "description": "Comfortable room with historic charm"
+            },
+            {
+              "id": "zermatt_monterosa_deluxe",
+              "name": "Deluxe Room",
+              "size": "40m²",
+              "occupancy": "2 guests",
+              "price": 420,
+              "description": "Spacious room with mountain views"
+            },
+            {
+              "id": "zermatt_monterosa_suite",
+              "name": "Junior Suite",
+              "size": "55m²",
+              "occupancy": "3 guests",
+              "price": 580,
+              "description": "Luxury suite with separate living area"
+            },
+            {
+              "id": "zermatt_monterosa_family",
+              "name": "Family Suite",
+              "size": "65m²",
+              "occupancy": "4 guests",
+              "price": 680,
+              "description": "Large family suite with multiple bedrooms"
+            }
+          ]
+        },
+        {
+          "id": "zermatt_alpenblick",
+          "name": "Hotel Alpenblick",
+          "rating": 4.2,
+          "stars": 3,
+          "description": "Charming hotel with panoramic mountain views and cozy atmosphere",
+          "isFromLiteApi": false,
+          "rooms": [
+            {
+              "id": "zermatt_alpenblick_standard",
+              "name": "Standard Room",
+              "size": "25m²",
+              "occupancy": "2 guests",
+              "price": 280,
+              "description": "Cozy room with mountain views"
+            },
+            {
+              "id": "zermatt_alpenblick_superior",
+              "name": "Superior Room",
+              "size": "32m²",
+              "occupancy": "2 guests",
+              "price": 340,
+              "description": "Larger room with enhanced amenities"
+            },
+            {
+              "id": "zermatt_alpenblick_triple",
+              "name": "Triple Room",
+              "size": "38m²",
+              "occupancy": "3 guests",
+              "price": 400,
+              "description": "Comfortable room for three guests"
+            },
+            {
+              "id": "zermatt_alpenblick_family",
+              "name": "Family Room",
+              "size": "45m²",
+              "occupancy": "4 guests",
+              "price": 480,
+              "description": "Spacious family accommodation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

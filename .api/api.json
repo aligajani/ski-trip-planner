@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "apis": [
+    {
+      "identifier": "nuitee-lite-api",
+      "source": "@nuitee-lite-api/v3.0.0#fd216mcuou79m",
+      "integrity": "sha512-Cmp5CEsQD071IJzGKUG2+COvGdpi+1hrmis30tLkYL7HlEXbcv8zyxAh9OAYIz56CnRQ6Ibnz7FK7vDMvpYRcQ==",
+      "installerVersion": "6.1.3"
+    }
+  ]
+}
