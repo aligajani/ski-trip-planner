@@ -39,7 +39,7 @@ export function VoteButton({ destinationId, tripId, disabled }: VoteButtonProps)
     };
 
     getCurrentUser();
-  }, [tripId, supabase.auth]);
+  }, [tripId, supabase]);
 
   const handleVote = async () => {
     if (disabled || isVoting || !currentUser || userVotedDestination !== null) return;

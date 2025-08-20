@@ -1,4 +1,4 @@
-import { Search, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { EnvVarWarning } from "@/components/env-var-warning";
 import { AuthButton } from "@/components/auth-button";
 import { hasEnvVars } from "@/lib/utils";

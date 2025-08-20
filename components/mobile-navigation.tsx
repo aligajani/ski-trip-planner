@@ -7,6 +7,7 @@ import { ThemeSwitcher } from "@/components/theme-switcher";
 import { AuthButton } from "@/components/auth-button";
 import { NavigationLinks } from "@/components/navigation-links";
 import { createClient } from "@/lib/supabase/client";
+import { User } from "@supabase/supabase-js";
 import Image from "next/image";
 
 interface MobileNavigationProps {
@@ -15,7 +16,7 @@ interface MobileNavigationProps {
 
 export function MobileNavigation({ children }: MobileNavigationProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
     const supabase = createClient();

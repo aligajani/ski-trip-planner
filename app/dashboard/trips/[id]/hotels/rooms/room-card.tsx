@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Bed, Users, Euro, Wifi, Car, Utensils, CheckCircle, AlertCircle } from "lucide-react";
+import { Bed, Users, Euro, Wifi, Car, Utensils, CheckCircle } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { bookHotelRoom, getParticipantBooking } from "@/lib/booking-service";
@@ -24,12 +24,11 @@ interface Room {
 
 interface RoomCardProps {
   room: Room;
-  hotelName: string;
   tripId: string;
   hotelSlug: string;
 }
 
-export function RoomCard({ room, hotelName, tripId, hotelSlug }: RoomCardProps) {
+export function RoomCard({ room, tripId, hotelSlug }: RoomCardProps) {
   const [isBooking, setIsBooking] = useState(false);
   const [isBooked, setIsBooked] = useState(false);
   const [currentUser, setCurrentUser] = useState<User | null>(null);
@@ -43,7 +42,7 @@ export function RoomCard({ room, hotelName, tripId, hotelSlug }: RoomCardProps) 
       if (user) {
         setCurrentUser(user);
         const booking = await getParticipantBooking(tripId, user.id);
-        if (booking && booking.hotel_selected_slug === hotelSlug && booking.room_selected_slug === room.id) {
+        if (booking && 'hotel_selected_slug' in booking && booking.hotel_selected_slug === hotelSlug && booking.room_selected_slug === room.id) {
           setIsBooked(true);
         }
       }

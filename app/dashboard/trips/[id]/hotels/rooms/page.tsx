@@ -8,16 +8,24 @@ import { RoomCard } from "./room-card";
 import { getHotelsForDestination } from "@/lib/hotel-service";
 
 interface RoomsPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
-  searchParams: {
+  }>;
+  searchParams: Promise<{
     hotel?: string;
-  };
+  }>;
+}
+
+interface RoomData {
+  id: string;
+  name: string;
+  occupancy: string;
+  price: number;
+  description: string;
 }
 
 // Helper function to convert room data to our room card format
-function convertRoomData(room: any) {
+function convertRoomData(room: RoomData) {
   return {
     id: room.id,
     name: room.name,
@@ -33,7 +41,7 @@ function convertRoomData(room: any) {
 export default async function RoomsPage({ params, searchParams }: RoomsPageProps) {
   const supabase = await createClient();
   const { id } = await params;
-  const hotelName = searchParams.hotel || "Hotel";
+  const hotelName = (await searchParams).hotel || "Hotel";
 
   // Fetch the specific trip
   const { data: trip, error } = await supabase
@@ -65,7 +73,7 @@ export default async function RoomsPage({ params, searchParams }: RoomsPageProps
   
   // Get rooms for the selected hotel
   const rooms = selectedHotel?.rooms ? selectedHotel.rooms.map(convertRoomData) : [];
-  const hotelSlug = selectedHotel?.id || "";
+  const hotelSlug = selectedHotel ? selectedHotel.name.toLowerCase().replace(/\s+/g, '_') : "";
 
   return (
     <div className="flex-1 w-full flex flex-col gap-8">
@@ -102,7 +110,6 @@ export default async function RoomsPage({ params, searchParams }: RoomsPageProps
           <RoomCard 
             key={room.id} 
             room={room} 
-            hotelName={hotelName}
             tripId={id}
             hotelSlug={hotelSlug}
           />

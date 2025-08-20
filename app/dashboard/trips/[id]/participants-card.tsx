@@ -28,10 +28,11 @@ export async function ParticipantsCard({ participants, destinationName, tripId }
     
     try {
       const hotels = await getHotelsForDestination(destinationName);
-      const hotel = hotels.find((h: any) => h.id === hotelSlug);
+      // Since HotelOption doesn't have an id, we'll use the hotel name as identifier
+      const hotel = hotels.find((h) => h.name.toLowerCase().replace(/\s+/g, '_') === hotelSlug);
       
       if (hotel) {
-        const room = hotel.rooms?.find((r: any) => r.id === roomSlug);
+        const room = hotel.rooms?.find((r) => r.id === roomSlug);
         return {
           hotelName: hotel.name,
           roomName: room?.name || roomSlug

@@ -8,9 +8,9 @@ import { ResortOptionsCard } from "./resort-options-card";
 import { ParticipantsCard } from "./participants-card";
 
 interface TripDetailPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default async function TripDetailPage({ params }: TripDetailPageProps) {

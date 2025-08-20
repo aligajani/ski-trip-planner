@@ -5,10 +5,11 @@ import { ThemeSwitcher } from "@/components/theme-switcher";
 import { NavigationLinks } from "@/components/navigation-links";
 import { useEffect, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
+import { User } from "@supabase/supabase-js";
 import Image from "next/image";
 
 export function DesktopSidebar() {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
     const supabase = createClient();

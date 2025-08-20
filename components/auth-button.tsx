@@ -5,13 +5,14 @@ import { Button } from "./ui/button";
 import { createClient } from "@/lib/supabase/client";
 import { LogoutButton } from "./logout-button";
 import { useEffect, useState } from "react";
+import { User } from "@supabase/supabase-js";
 
 interface AuthButtonProps {
   showDashboard?: boolean;
 }
 
 export function AuthButton({ showDashboard = false }: AuthButtonProps) {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

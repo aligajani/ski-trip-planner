@@ -8,9 +8,9 @@ import { HotelCard } from "@/app/dashboard/trips/[id]/hotels/hotel-card";
 import { getHotelsForDestination } from "@/lib/hotel-service";
 
 interface HotelsPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default async function HotelsPage({ params }: HotelsPageProps) {
